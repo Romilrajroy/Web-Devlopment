@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1 class="text-uppercase">counter</h1>
+			<h1 id="counter">0</h1>
+			<div class="btnContainer">
+				<button class="btn counterBtn btn-danger prevBtn text-uppercase" >lower count</button>
+				<button  class="btn counterBtn btn-success nextBtn text-uppercase">add count</button>
+			</div>
+		
+		</div>
+	
+	</div>
+
+</div>
+<script>
+var buttons= document.querySelectorAll(".counterBtn");
+var count=0
+
+buttons.forEach(function(button){
+button.addEventListener("click",function(){
+if(button.classList.contains('prevBtn')){
+count--
+}else if(button.classList.contains('nextBtn')){
+count++
+}
+var counter=document.querySelector("#counter")
+counter.textContent= count
+
+if(count< 0){
+counter.style.color="red";
+}else if(count>0){
+counter.style.color="green";
+}
+
+})
+
+
+})
+// forEach && querySelectorAll && classList.contains
+</script>
+</body>
+</html>

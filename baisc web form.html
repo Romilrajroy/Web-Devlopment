@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Form </title>
+		
+		 <style type="text/css"> 
+		 h1{text-align:center;
+		    color:white;
+		    font-family:"Brush Script MT", cursive;}
+			body{background-image:url(africa.jpg);}
+			p{font-family:Papyrus, fantasy;}
+			
+			#header{
+			background-color:#C48313;
+			height:50px;
+			width:500px;
+			text-align:center;
+			border-top-left-radius:15px;
+			border-top-right-radius:15px;
+			box-shadow:5px 5px 5px #7C5108;
+			position:relative;
+			left:400px;}
+			
+			
+			
+		
+
+		 </style>
+	</head>
+	<body>
+	<div id="header"><h1>Help For AFRICA</h1></div>
+	
+	<form>
+
+FullName:
+<br/>
+<input type="text" name="first" value="FullName">
+<br/>
+Email Address:
+<br/>
+<input type="text" name="second" value="email">
+<br/>
+sex:
+male<input type="radio" name="sex" value="male">
+female<input type="radio" name="sex" value="female">
+
+
+<p>Support us in the following ways to put medical camps for EBOLA in central Africa :-)<p/>
+I will Donate money<input type="checkbox" checked name="help" value="money"><br/>
+Volunter as a doctor<input type="checkbox" name="help" value="volunter"><br/>
+Donate basic supplies<input type="checkbox" name="help" value="supplies">
+<br/>
+<input class="btn btn-success" type="submit" name="submit" value="donate" onclick="func()">
+<br/>
+<p>Tell us how we can improve our services</p>
+<br/>
+<textarea>
+Write here.
+</textarea>
+<br/>
+	</form>
+	<script type="text/javascript">
+function func(){
+alert("your donation is successful");
+	}
+	
+</script>
+	</body>
+</html>
