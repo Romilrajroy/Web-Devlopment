@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <title>Frontend Demo Task</title>
+    <style>
+
+        .container-fluid {
+            padding: 80px 100px;
+        }
+
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.9;
+        }
+
+            .person:hover {
+                border-color: #f1f1f1;
+            }
+
+        .carousel-inner img {
+            -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+            width: 100%;
+            margin: auto;
+        }
+
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        @media(max-width: 576px) {
+            .carousel-caption {
+                display: none
+            }
+        }
+
+        .carousel-caption {
+            font-family: "Lucida Console", Courier, monospace;
+        }
+
+        #content {
+            background: #ffffff;
+            color: #b96767;
+            width: 100%;
+            font-family: Courier, monospace;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+
+        #content, p {
+            font-style:normal;
+            font-weight: 900;
+
+        } 
+
+        #span1 {
+            color:aqua;
+        }
+
+        #liveClass {
+            background: #d1cece;
+            width: 100%;
+            font-family: Courier, monospace;
+            font-style: oblique;
+        }
+
+        #hovr:hover, #hovr:focus {
+            border: 0.5px solid #44b2b2;
+            background-color: #44b2b2;
+        }
+
+        #subjects {
+            background:#aaaaaa;
+        }
+        .thumb:hover {
+            border:10px solid white;
+        }
+        .circle:hover {
+            border: 10px solid white;
+        }
+
+       
+    </style>
+</head>
+<body id="mypage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <!--logo & collapsable navbar-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Learning Alley</a>
+            </div>
+            <!--menu bar-->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#liveClass">Live classes</a></li>
+                    <li><a href="#subjects">Explore Subjects</a></li>
+                    <li><a href="#board">State Boards</a></li>
+                    <li><a href="#about">About Us</a></li>
+
+
+
+                    <!--drop down menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Carrier oppurtunities<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Join as a teacher</a></li>
+                            <li><a href="#">Sales Representative</a></li>
+                            <li><a href="#">Web Devloper</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <!-- right align-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">LogIn/SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="expert.jpg" alt=" ride the lightning">
+                <div class="carousel-caption">
+                    <h3>Clarify Your dobuts</h3>
+                    <p>Ask anything,anytime.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="classonline.jpg" alt="online classes">
+                <div class="carousel-caption">
+                    <h3>Take online lessons from top pros.</h3>
+                    <p>Take classes you are intrested in whenever you like.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="exam.jpg" alt="exam">
+                <div class="carousel-caption">
+                    <h3>Prepare for all India Exams</h3>
+                    <p>Get access toour world class competitive exam content.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="language.jpg" alt=" ride the lightning">
+                <div class="carousel-caption">
+                    <h3>Ask question in your prefered language.</h3>
+                    <p>Now ask your doubts in the languge you are comfortable in.</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container-fluid text-center" id="content">
+        <h1 class="text-capitalize"> What is <em>Learning alley?</em></h1>
+        <p> some introduction leading into the what eduTech startup (learning alley) has to offer</p>
+
+        </br>
+
+        <div class="row">
+            <h3> Our Experties</h3><br>
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>LIVE classes</strong></h4><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="liveClass.JPG" class="img-circle person" alt="LiveClass">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>Loreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>JEE/NEET Preparation</strong></h4><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="JEE2.JPG" alt="JEE" class="img-circle person">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Loreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>20+ state Boards</strong></h4><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="stateimg.JPG" class="img-circle person" alt="Slayer">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Loreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>School Subjects</strong></h4><br>
+                <a href="#demo4" data-toggle="collapse">
+                    <img src="ncert.png" class="img-circle person" alt="Anthrax">
+                </a>
+                <div id="demo4" class="collapse">
+                    <p>Loreum Ipsum Dipsum.</p>
+                    <p>Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.</p>
+                    <p>Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.Loreum Ipsum Dipsum.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>GATE Preparation</strong></h4><br>
+                <a href="#demo5" data-toggle="collapse">
+                    <img src="gate.JPG" class="img-circle person" alt="Slayer">
+                </a>
+                <div id="demo5" class="collapse">
+                    <p>Loreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <h4 class="text center"><strong>CAT Preparation</strong></h4><br>
+                <a href="#demo6" data-toggle="collapse">
+                    <img src="cat.JPG" class="img-circle person" alt="Slayer">
+                </a>
+                <div id="demo6" class="collapse">
+                    <p>Loreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+                    <p>Loreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsumLoreum ipsum dipsum</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid text-center" id="liveClass">
+        <h2 class="text-center" id="hovr"><span id="span1"><a href="#">LIVE Classes</a></span></h2>
+        <br>
+        <img src="liveClass.JPG" class="text-center" width="474" height="337">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Accessible everywhere</h3>
+                <p> Access to live classses anywhere and anytime</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Expert Teachers</h3>
+                <p>World class content taught by best in class teachers</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Interactive Sessions</h3>
+                <p>Small groups for maximum efficiency </p>
+            </div>
+        </div>
+        <h3>Take a FREE trial Class today!</h3>
+        <button class="btn btn-danger"><a href="#">Click here to know more</a></button>
+
+    </div>
+
+    <div class="container-fluid text-center" id="subjects" style>
+        <h2>Explore the subjects with us</h2>
+
+        <br>
+        <div class="row">
+
+            <div class="col-sm-3">
+                <a href="#">
+                    <img src="math.JPG" class="img-thumbnail thumb" width="100" height="100">
+                    <p>Maths</p>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="#">
+                    <img src="physics.GIF" class="img-thumbnail thumb" width="100" height="100">
+                    <p>Physics</p>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="#">
+                    <img src="phe.JPG" class="thumb" width="100" height="100">
+                    <p>Physical education</p>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="#">
+                    <img src="history.JPG" class="img-thumbnail thumb" width="100" height="100">
+                    <p>History</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-right"><p><a href="#" style="color:red"> view all</a></p></div>
+    </div>
+
+    <div class="container-fluid text-center" id="books" style="background-color:#757575">
+        <h2><span style="color:#08157d">Get Free</span> access to 1000+ books</h2>
+        <p> get free access to our virtual libray of 1000's of text books and reference books for stateboards and various competitive exams.</p>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="ncert.png" class="img-thumbnail thumb" width="100" height="100">
+                <p>NCERT</p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="hcverma.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>HC VERMA</p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="tata.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>TATA McGraw Hill</p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="rdsharma.JPG" class="img-thumbnail thumb" width="100" height="100">
+                <p>RD SHARMA</p>
+            </div>
+
+            <div class="col-sm-2">
+                <img src="pradeep.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>PRADEEP'S</p>
+            </div>
+
+            <div class="col-sm-2">
+                <img src="math2.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>MATHS</p>
+            </div>
+        </div>
+        <div class="text-right"><p><a href="#" style="color:red"> view all</a></p></div>
+    </div>
+
+    <div class="container-fluid text-center" id="board" style="background-color:#686868">
+        <h2 style="color: #08157d"> <strong>STATE BOARDS</strong></h2>
+        <p>Learn your board Sylubus with the best in class teachers with us.</p>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="JK.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>Jammu&Kashmir board </p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="maha.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>maharshtra board</p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="bihar.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>Bihar board</p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <img src="punjab.JPG" class="img-thumbnail thumb" width="100" height="100">
+                <p>Punjab board</p>
+            </div>
+
+            <div class="col-sm-2">
+                <img src="Haryana.gif" class="img-thumbnail thumb" width="100" height="100">
+                <p>Haryana board</p>
+            </div>
+
+            <div class="col-sm-2">
+                <img src="orissa.jpg" class="img-thumbnail thumb" width="100" height="100">
+                <p>orrisa board</p>
+            </div>
+
+        </div>
+        <div class="text-right"><p><a href="#" style="color:red"> view all</a></p></div>
+
+
+    </div>
+
+    <div class="container-fluid text-center" id="teacher" style="background-color:#5b5b5b">
+        <h2><strong>Meet our expert teachers</strong></h2>
+        <br />
+
+        <div class="row">
+            <div class="col-sm-3">
+                <h4><img src="teacher.jpg" class="img-circle circle" width="80" height="80">Rachita Roy: <small>Loreum ipsum dipsum</small></h4>
+            </div>
+
+            <div class="col-sm-3">
+                <h4><img src="teacher.jpg" class="img-circle circle" width="80" height="80">Rachita Roy: <small>Loreum ipsum dipsum</small></h4>
+
+            </div>
+            <div class="col-sm-3">
+                <h4><img src="teacher.jpg" class="img-circle circle" width="80" height="80">Rachita Roy: <small>Loreum ipsum dipsum</small></h4>
+
+            </div>
+            <div class="col-sm-3">
+                <h4><img src="teacher.jpg" class="img-circle circle" width="80" height="80">Rachita Roy: <small>Loreum ipsum dipsum</small></h4>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid text-center" style="background-color:#313131">
+        <h2 style="color:white">What our Students have to say</h2>
+        <br>
+        <div id="myCarousel" class="row carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <div col-sm-4>
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4 style="color:white">"loreum ipsum dipsum.loreum ipsum dipsum.loreum ipsum dipsum."<br><span style="font-style:normal;">diya roy, 17</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4 style="color:white">"loreum ipsum dipsum.loreum ipsum dipsum.loreum ipsum dipsum."<br><span style="font-style:normal;">John Doe,22</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4 style="color:white">"loreum ipsum dipsum.loreum ipsum dipsum.loreum ipsum dipsum."<br><span style="font-style:normal;">ramesh singh,18</span></h4>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid" id="about" style="background-color:#212020">
+        <h2>ABOUT US</h2>
+        <p>
+            Loreum ipsum dipsum.Loreum ipsum dipsum.Loreum ipsum dipsum.Loreum ipsum dipsum.
+            Loreum ipsum dipsum.Loreum ipsum dipsum.
+            Loreum ipsum dipsum.
+            Loreum ipsum dipsum.
+        </p>
+
+    </div>
+    <footer class="container-fluid text-center" style="background:black">
+        <a href="#mypage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Demo task made by Romil.</p>
+    </footer>
+
+    <script>
+        $(function () {
+            $('.carousel-control').click(function (e) {
+                e.preventDefault();
+                $('#myCarousel').carousel(($this).data());
+            });
+
+        });
+        $(document).ready(function () {
+            
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+
+        $(document).ready(function () {
+            
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+
+
+</body>
+</html>
